@@ -27,6 +27,7 @@ registerApplication({
   activeWhen: () => location.pathname === '/react-route',
 });
 
+
 start({
   urlRerouteOnly: true,
 });
