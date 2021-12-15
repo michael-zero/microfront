@@ -4,7 +4,7 @@ registerApplication({
   name: "@single-spa/welcome",
   app: () =>
     System.import(
-      "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js"
+      "@single-spa/welcome"
     ),
   activeWhen: () => location.pathname === '/',
 });
@@ -31,6 +31,11 @@ registerApplication({
   name: "@mc/react-lazy",  
   app: () => System.import("@mc/react-lazy"),
   activeWhen: ['/react-lazy'],
+});
+registerApplication({
+  name: "@mc/react-header",  
+  app: () => System.import("@mc/react-header"),
+  activeWhen: ['/'],
 });
 
 

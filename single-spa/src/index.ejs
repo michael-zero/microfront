@@ -16,7 +16,8 @@
       "imports": {
         "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
         "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
-        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js"
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js",
+        "react-router-dom": "https://unpkg.com/react-router-dom@6.1.1/umd/react-router-dom.development.js"
       }
     }
   </script>
@@ -27,12 +28,14 @@
   <script type="systemjs-importmap">
     {
       "imports": {
+        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@mc/root-config":  "//localhost:9000/mc-root-config.js",
         "@mc/react-single": "//localhost:8500/mc-react-single.js",
-        "@mc/react-multiples": "//localhost:8500/mc-react-multiples.js",
+        "@mc/react-multiples": "//localhost:8503/mc-react-multiples.js",
         "@mc/react-parcel": "//localhost:8501/mc-react-parcel.js",
-        "@mc/react-route": "//localhost:8500/mc-react-route.js",
-        "@mc/react-lazy": "//localhost:8500/mc-react-lazy.js",
+        "@mc/react-route": "//localhost:8502/mc-react-route.js",
+        "@mc/react-lazy": "//localhost:8504/mc-react-lazy.js",
+        "@mc/react-header": "//localhost:8700/mc-react-header.js",
         "@mc/utils": "//localhost:8600/mc-utils.js"
       }
     }
